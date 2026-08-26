@@ -3638,6 +3638,7 @@ dependencies = [
  "log",
  "log_init",
  "mimalloc",
+ "static_init",
  "thiserror 2.0.20",
  "tokio",
  "wasmtime",

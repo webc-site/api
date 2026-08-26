@@ -1,4 +1,3 @@
-use std::env;
 use std::path::PathBuf;
 use std::sync::Arc;
 
@@ -7,16 +6,20 @@ use axum::extract::State;
 use axum::http::{StatusCode, Uri};
 use axum::response::IntoResponse;
 use axum::routing::any;
+use genv::{s, static_init};
 use log::{error, info};
 use tokio::net::TcpListener;
 
 use crate::error::Result;
 use crate::runtime::WasmEngine;
 
+s!(
+    LISTEN_ADDR: String | "0.0.0.0:8080".to_string();
+    WASM_PATH: String | "dist/api.wasm".to_string();
+);
+
 pub async fn srv() -> Result<()> {
-    let wasm_path = env::var("WASM_PATH")
-        .map(PathBuf::from)
-        .unwrap_or_else(|_| PathBuf::from("dist/api.wasm"));
+    let wasm_path = PathBuf::from(&*WASM_PATH);
 
     info!("Loading WASM module from {:?}", wasm_path);
     let engine = WasmEngine::new(&wasm_path)?;
@@ -26,8 +29,7 @@ pub async fn srv() -> Result<()> {
         .fallback(any(handle_request))
         .with_state(engine);
 
-    let addr = env::var("LISTEN_ADDR").unwrap_or_else(|_| "0.0.0.0:8080".to_string());
-    let listener = TcpListener::bind(&addr).await?;
+    let listener = TcpListener::bind(&*LISTEN_ADDR).await?;
     info!("Server listening on http://{}", listener.local_addr()?);
 
     axum::serve(listener, app).await?;

@@ -1,7 +1,7 @@
-use std::env;
 use std::path::Path;
 use std::sync::Arc;
 
+use genv::{s, static_init};
 use tokio::sync::Semaphore;
 use wasmtime::{
     Config, Engine, InstanceAllocationStrategy, Linker, Module, OptLevel, PoolingAllocationConfig,
@@ -11,6 +11,11 @@ use wasmtime_wasi::WasiCtxBuilder;
 use wasmtime_wasi::p1::{WasiP1Ctx, add_to_linker_async};
 
 use crate::error::Result;
+
+s!(
+    POOL_TOTAL_INSTANCES: u32 | 1024;
+    POOL_MAX_MEMORY_MB: usize | 64;
+);
 
 pub struct ServerCtx {
     pub wasi: WasiP1Ctx,
@@ -31,15 +36,8 @@ impl WasmEngine {
         config.memory_init_cow(true);
         config.async_stack_size(512 * 1024);
 
-        let total_instances = env::var("POOL_TOTAL_INSTANCES")
-            .ok()
-            .and_then(|v| v.parse().ok())
-            .unwrap_or(1024);
-
-        let max_mem_mb = env::var("POOL_MAX_MEMORY_MB")
-            .ok()
-            .and_then(|v| v.parse::<usize>().ok())
-            .unwrap_or(64);
+        let total_instances = *POOL_TOTAL_INSTANCES;
+        let max_mem_mb = *POOL_MAX_MEMORY_MB;
 
         let mut pool_config = PoolingAllocationConfig::default();
         pool_config.total_core_instances(total_instances);
