@@ -1,7 +1,7 @@
 use std::path::Path;
 use std::sync::Arc;
 
-use genv::{s, static_init};
+use genv::s;
 use tokio::sync::Semaphore;
 use wasmtime::{
     Config, Engine, InstanceAllocationStrategy, Linker, Module, OptLevel, PoolingAllocationConfig,

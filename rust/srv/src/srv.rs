@@ -6,14 +6,13 @@ use axum::extract::State;
 use axum::http::{StatusCode, Uri};
 use axum::response::IntoResponse;
 use axum::routing::any;
-use genv::{s, static_init};
 use log::{error, info};
 use tokio::net::TcpListener;
 
 use crate::error::Result;
 use crate::runtime::WasmEngine;
 
-s!(
+genv::s!(
     LISTEN_ADDR: String | "0.0.0.0:8080".to_string();
     WASM_PATH: String | "dist/api.wasm".to_string();
 );
