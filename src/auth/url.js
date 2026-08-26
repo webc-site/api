@@ -1,0 +1,25 @@
+// GEN BY gen.js
+export default [
+  "get",
+  "info",
+  "lang",
+  "mail/change",
+  "mail/changeApply",
+  "mail/passwordReset",
+  "mail/signin",
+  "mail/userNew",
+  "mail/userNewApply",
+  "token/disable",
+  "token/enable",
+  "token/ls",
+  "token/nameSet",
+  "token/new",
+  "token/refresh",
+  "token/rm",
+  "user",
+  "user/bidRm",
+  "user/exit",
+  "user/nameSet",
+  "user/passwordSet",
+  "user/touch"
+];

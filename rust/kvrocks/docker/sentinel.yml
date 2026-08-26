@@ -1,0 +1,50 @@
+services:
+  kvrocks-sentinel-master:
+    image: apache/kvrocks:latest
+    container_name: kvrocks-sentinel-master
+    command:
+      [
+        "-c",
+        "/var/lib/kvrocks/kvrocks.conf",
+        "--requirepass",
+        "kvrocks_secret_pass",
+        "--masterauth",
+        "kvrocks_secret_pass"
+      ]
+    ports:
+      - "6667:6666"
+    restart: unless-stopped
+
+  kvrocks-sentinel-replica:
+    image: apache/kvrocks:latest
+    container_name: kvrocks-sentinel-replica
+    command:
+      [
+        "-c",
+        "/var/lib/kvrocks/kvrocks.conf",
+        "--requirepass",
+        "kvrocks_secret_pass",
+        "--masterauth",
+        "kvrocks_secret_pass",
+        "--slaveof",
+        "kvrocks-sentinel-master",
+        "6666"
+      ]
+    ports:
+      - "6668:6666"
+    depends_on:
+      - kvrocks-sentinel-master
+    restart: unless-stopped
+
+  sentinel:
+    image: redis:alpine
+    container_name: redis-sentinel-node
+    command: redis-sentinel /etc/redis/sentinel.conf
+    volumes:
+      - ./sentinel.conf:/etc/redis/sentinel.conf
+    ports:
+      - "26379:26379"
+    depends_on:
+      - kvrocks-sentinel-master
+      - kvrocks-sentinel-replica
+    restart: unless-stopped

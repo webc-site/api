@@ -1,0 +1,15 @@
+syntax="proto3";
+
+package auth.token;
+
+import "token/ls.proto";
+
+message NewReq {
+  uint64 uid=1;
+  string name=2;
+}
+
+message New {
+  uint64 id=1;
+  Info info=2;
+}

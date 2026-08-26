@@ -1,0 +1,2 @@
+// GEN BY tran.js
+export default (it) => 'Ubah suai e-mel: ' + it.from + ' → ' + it.to + ' (Kod pengesahan e-mel baharu: ' + it.code + ' )\n\nAnda memohon untuk mengubah suai alamat e-mel akaun anda: ' + it.from + ' → ' + it.to + '\nJika ini adalah operasi anda sendiri, kod pengesahan e-mel baharu ialah:\n\n' + it.token_str + '\nKod pengesahan sah selama dua puluh empat jam.\n\nJika anda tidak meminta untuk mengubah suai alamat e-mel anda, sila abaikan e-mel ini.';

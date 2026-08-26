@@ -1,0 +1,9 @@
+syntax="proto3";
+
+package auth.user;
+
+message BidRmReq {
+  uint64 uid=1;
+}
+
+message BidRm {}

@@ -1,0 +1,2 @@
+// GEN BY tran.js
+export default (it) => 'Keisti el. pašto adresą: ' + it.from + ' → ' + it.to + ' (Senas el. pašto patvirtinimo kodas: ' + it.code + ' )\n\nJūs pateikiate paraišką pakeisti savo paskyros el. pašto adresą: ' + it.from + ' → ' + it.to + '\nEl. pašto patvirtinimo kodas yra:\n\n' + it.token_str + '\nPatvirtinimo kodas galioja dvidešimt keturias valandas.\n\nJei nepateikėte prašymo pakeisti savo el. pašto adresą, nekreipkite dėmesio į šį el. laišką ir atkreipkite dėmesį į paskyros saugumą.';

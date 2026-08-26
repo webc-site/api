@@ -1,0 +1,45 @@
+[package]
+name = "kvrocks"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+description = "Lightweight async Redis and Apache Kvrocks client with RESP3, auto-pipeline, sentinel, and cluster support / 轻量级异步 Redis 与 Apache Kvrocks 客户端，支持 RESP3 协议、自动流水线、哨兵与集群"
+keywords = ["redis", "kvrocks", "resp3", "async", "database"]
+categories = ["database", "asynchronous", "network-programming", "caching", "wasm"]
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+arc-swap = "1.9"
+bytes = "1.12.1"
+crc = "3.4"
+futures = "0.3.34"
+itoa = "1.0"
+memchr = "2.8"
+rapidhash = "4.5.1"
+ryu = "1.0"
+serde = { version = "1.0.229", features = ["derive"] }
+sonic-rs = "0.5.8"
+
+
+[target.'cfg(not(target_arch = "wasm32"))'.dependencies]
+tokio = { version = "1.53.1", features = ["net", "io-util", "sync", "time", "macros", "rt"] }
+
+[target.'cfg(target_arch = "wasm32")'.dependencies]
+tokio = { version = "1.53.1", default-features = false, features = ["sync", "io-util", "macros"] }
+wasm-bindgen.workspace = true
+wasm-bindgen-futures = "0.4"
+js-sys = "0.3"
+web-sys = { version = "0.3", features = ["ReadableStream", "WritableStream"] }
+getrandom = { version = "0.4", features = ["wasm_js"] }
+getrandom_03 = { package = "getrandom", version = "0.3", features = ["wasm_js"] }
+getrandom_02 = { package = "getrandom", version = "0.2", features = ["js"] }
+
+
+[dev-dependencies]
+tokio = { version = "1.53.1", features = ["full"] }
+rand = "0.10"
+aok = "0.1.18"

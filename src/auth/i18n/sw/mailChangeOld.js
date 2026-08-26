@@ -1,0 +1,2 @@
+// GEN BY tran.js
+export default (it) => 'Rekebisha barua pepe: ' + it.from + ' → ' + it.to + ' (Nambari ya uthibitishaji ya barua pepe ya zamani: ' + it.code + ' )\n\nUnatuma ombi la kurekebisha barua pepe ya akaunti yako: ' + it.from + ' → ' + it.to + '\nMsimbo wa uthibitishaji wa barua pepe ni:\n\n' + it.token_str + '\nNambari ya kuthibitisha ni halali kwa saa ishirini na nne.\n\nIkiwa hujatuma ombi la kurekebisha anwani yako ya barua pepe, tafadhali puuza barua pepe hii na uzingatie usalama wa akaunti.';

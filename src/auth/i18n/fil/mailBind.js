@@ -1,0 +1,2 @@
+// GEN BY tran.js
+export default (it) => 'Bind email: ' + it.to + ' (Email verification code: ' + it.code + ' )\n\nNag-a-apply ka para i-bind ang email ng account:' + it.to + '\nAng email verification code ay:\n\n' + it.token_str + '\nAng verification code ay may bisa sa loob ng dalawampu\'t apat na oras.\n\nKung hindi ka pa nag-aplay upang itali ang iyong email address, mangyaring huwag pansinin ang email na ito.';

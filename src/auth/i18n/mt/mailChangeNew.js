@@ -1,0 +1,2 @@
+// GEN BY tran.js
+export default (it) => 'Ibdel l-email: ' + it.from + ' → ' + it.to + ' (Kodiċi ta\' verifika ta\' email ġdid: ' + it.code + ' )\n\nQed tapplika biex timmodifika l-indirizz elettroniku tal-kont tiegħek: ' + it.from + ' → ' + it.to + '\nJekk din hija l-operazzjoni tiegħek stess, il-kodiċi l-ġdid tal-verifika tal-email huwa:\n\n' + it.token_str + '\nIl-kodiċi ta\' verifika huwa validu għal erbgħa u għoxrin siegħa.\n\nJekk ma tlabtx li timmodifika l-indirizz elettroniku tiegħek, jekk jogħġbok injora din l-email.';

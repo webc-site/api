@@ -1,0 +1,2 @@
+// GEN BY tran.js
+export default (it) => 'E-mail módosítása: ' + it.from + ' → ' + it.to + ' (Új e-mail ellenőrző kód: ' + it.code + ' )\n\nJelentkezik fiókja e-mail címének módosítására: ' + it.from + ' → ' + it.to + '\nHa ez a saját művelete, az új e-mail-ellenőrző kód a következő:\n\n' + it.token_str + '\nAz ellenőrző kód huszonnégy óráig érvényes.\n\nHa nem kérte az e-mail cím módosítását, kérjük, hagyja figyelmen kívül ezt az e-mailt.';

@@ -1,0 +1,16 @@
+syntax="proto3";
+
+package auth.mail;
+
+message UserNewApplyReq {
+  string to=1;
+}
+
+enum UserNewApplyState {
+  OK=0;
+  ERR_MAIL_EXIST=1;
+}
+
+message UserNewApply {
+  UserNewApplyState state=1;
+}

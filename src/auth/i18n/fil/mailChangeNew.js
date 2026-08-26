@@ -1,0 +1,2 @@
+// GEN BY tran.js
+export default (it) => 'Baguhin ang email: ' + it.from + ' → ' + it.to + ' (Bagong email verification code: ' + it.code + ' )\n\nNag-a-apply ka para baguhin ang email address ng iyong account: ' + it.from + ' → ' + it.to + '\nKung ito ang sarili mong operasyon, ang bagong email verification code ay:\n\n' + it.token_str + '\nAng verification code ay may bisa sa loob ng dalawampu\'t apat na oras.\n\nKung hindi mo hiniling na baguhin ang iyong email address, mangyaring huwag pansinin ang email na ito.';

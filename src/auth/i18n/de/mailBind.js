@@ -1,0 +1,2 @@
+// GEN BY tran.js
+export default (it) => 'E-Mail binden: ' + it.to + ' (E-Mail-Bestätigungscode: ' + it.code + ' )\n\nSie beantragen die Bindung der Konto-E-Mail-Adresse:' + it.to + '\nDer E-Mail-Bestätigungscode lautet:\n\n' + it.token_str + '\nDer Bestätigungscode ist vierundzwanzig Stunden lang gültig.\n\nWenn Sie die Bindung Ihrer E-Mail-Adresse nicht beantragt haben, ignorieren Sie diese E-Mail bitte.';

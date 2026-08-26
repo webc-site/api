@@ -1,0 +1,2 @@
+// GEN BY tran.js
+export default (it) => 'Modifiko emailin: ' + it.from + ' → ' + it.to + ' (Kodi i vjetër i verifikimit të emailit: ' + it.code + ' )\n\nJu po aplikoni për të modifikuar adresën e emailit të llogarisë suaj: ' + it.from + ' → ' + it.to + '\nKodi i verifikimit të emailit është:\n\n' + it.token_str + '\nKodi i verifikimit është i vlefshëm për njëzet e katër orë.\n\nNëse nuk keni aplikuar për të modifikuar adresën tuaj të emailit, ju lutemi shpërfilleni këtë email dhe kushtojini vëmendje sigurisë së llogarisë.';

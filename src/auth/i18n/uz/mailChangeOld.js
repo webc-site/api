@@ -1,0 +1,2 @@
+// GEN BY tran.js
+export default (it) => 'Elektron pochta manzilini o‘zgartirish: ' + it.from + ' → ' + it.to + ' (E-pochta manzilini tasdiqlash kodi: ' + it.code + ' )\n\nHisobingiz e-pochta manzilini oʻzgartirish uchun ariza topshiryapsiz: ' + it.from + ' → ' + it.to + '\nElektron pochtani tasdiqlash kodi:\n\n' + it.token_str + '\nTasdiqlash kodi yigirma to\'rt soat davomida amal qiladi.\n\nAgar siz elektron pochta manzilingizni o\'zgartirish uchun ariza bermagan bo\'lsangiz, iltimos, ushbu xatga e\'tibor bermang va hisob xavfsizligiga e\'tibor bering.';

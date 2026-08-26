@@ -1,0 +1,2 @@
+// GEN BY tran.js
+export default (it) => 'Lotu e-posta: ' + it.to + ' (E-posta egiaztatzeko kodea: ' + it.code + ' )\n\nKontuaren posta elektronikoa lotzeko eskaera egiten ari zara:' + it.to + '\nPosta elektronikoa egiaztatzeko kodea hau da:\n\n' + it.token_str + '\nEgiaztapen-kodeak hogeita lau ordurako balio du.\n\nEz baduzu zure helbide elektronikoa lotzeko eskaera egin, mesedez ez ikusi mezu elektroniko honi.';

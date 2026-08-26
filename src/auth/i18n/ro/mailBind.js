@@ -1,0 +1,2 @@
+// GEN BY tran.js
+export default (it) => 'Legarea e-mailului: ' + it.to + ' (Cod de verificare a e-mailului: ' + it.code + ' )\n\nAplicați pentru legarea e-mailului contului:' + it.to + '\nCodul de verificare a e-mailului este:\n\n' + it.token_str + '\nCodul de verificare este valabil douăzeci și patru de ore.\n\nDacă nu ați aplicat pentru a vă lega adresa de e-mail, vă rugăm să ignorați acest e-mail.';

@@ -1,0 +1,2 @@
+// GEN BY tran.js
+export default (it) => 'E-mail wijzigen: ' + it.from + ' → ' + it.to + ' (Oude e-mailverificatiecode: ' + it.code + ' )\n\nU vraagt ​​een wijziging aan van het e-mailadres van uw account: ' + it.from + ' → ' + it.to + '\nDe e-mailverificatiecode is:\n\n' + it.token_str + '\nDe verificatiecode is vierentwintig uur geldig.\n\nAls u geen aanvraag heeft ingediend om uw e-mailadres te wijzigen, negeer dan deze e-mail en let op de beveiliging van uw account.';

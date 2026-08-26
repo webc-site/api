@@ -1,0 +1,20 @@
+{
+  "lockfileVersion": 1,
+  "configVersion": 1,
+  "workspaces": {
+    "": {
+      "name": "@webc.site/auth",
+      "dependencies": {
+        "@1-/proto": "^0.1.1",
+        "@1-/protoapi": "^0.1.7",
+      },
+    },
+  },
+  "packages": {
+    "@1-/proto": ["@1-/proto@0.1.1","",{ "dependencies": { "@3-/utf8": "^0.1.1" } },"sha512-mUBF7eyohUbQSqtmyhtz75+Ohs27BGGRNwvkGp+XlKifl5ayvap/GmMAUkyeSJpjJ+3uoFm+SVZlXjW8vl3qXQ=="],
+
+    "@1-/protoapi": ["@1-/protoapi@0.1.7","",{ "dependencies": { "@1-/proto": "^0.1.1","@3-/utf8": "^0.1.1" } },"sha512-xaa7jstZnNqDGkkjKyb6pvRpSCnH8uV+Ig5LGOrJUOMMcAk11FBk3lWhpWmZTULOH+9edzLEAUdYDp3N3y+bPQ=="],
+
+    "@3-/utf8": ["@3-/utf8@0.1.1","",{},"sha512-WnbRCw6zRiSuHDdHqB88Th9pwmu2Y1aOs/jgK0g6ZIiVS8rDaTDV4XEGF8XOuVdzCGQPoTR3IgIKM5+05tugCQ=="],
+  }
+}

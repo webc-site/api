@@ -1,0 +1,2 @@
+// GEN BY tran.js
+export default (it) => 'Breyta tölvupósti: ' + it.from + ' → ' + it.to + ' (Nýr staðfestingarkóði tölvupósts: ' + it.code + ' )\n\nÞú ert að sækja um að breyta netfangi reikningsins þíns: ' + it.from + ' → ' + it.to + '\nEf þetta er þín eigin aðgerð er nýi staðfestingarkóði tölvupóstsins:\n\n' + it.token_str + '\nStaðfestingarkóðinn gildir í tuttugu og fjórar klukkustundir.\n\nEf þú hefur ekki beðið um að breyta netfanginu þínu skaltu hunsa þennan tölvupóst.';

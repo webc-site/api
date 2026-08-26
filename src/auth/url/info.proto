@@ -1,0 +1,17 @@
+syntax="proto3";
+
+package auth;
+
+enum AccountType {
+  MAIL=1;
+  PHONE=2;
+}
+
+message InfoReq {
+  string account=1;
+}
+
+message Info {
+  AccountType type=1;
+  bool exist=2;
+}

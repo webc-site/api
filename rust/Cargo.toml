@@ -1,0 +1,25 @@
+[workspace]
+resolver = "3"
+members = ["api", "kvrocks", "lib", "srv", "url/*"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+license = "Apache-2.0"
+repository = "https://github.com/webc-site/api"
+homepage = "https://webc.site"
+
+[workspace.dependencies]
+wasm-bindgen = "0.2"
+
+[profile.release]
+opt-level = "z"
+lto = "fat"
+codegen-units = 1
+panic = "abort"
+strip = true
+overflow-checks = false
+
+[profile.release.package.webc_srv]
+opt-level = 3
+

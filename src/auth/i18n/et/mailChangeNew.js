@@ -1,0 +1,2 @@
+// GEN BY tran.js
+export default (it) => 'Muuda e-posti aadressi: ' + it.from + ' → ' + it.to + ' (Uus e-posti kinnituskood: ' + it.code + ' )\n\nTaotled oma konto e-posti aadressi muutmist: ' + it.from + ' → ' + it.to + '\nKui see on teie enda toiming, on uus e-posti kinnituskood:\n\n' + it.token_str + '\nKinnituskood kehtib kakskümmend neli tundi.\n\nKui te ei ole taotlenud oma e-posti aadressi muutmist, ignoreerige seda meili.';

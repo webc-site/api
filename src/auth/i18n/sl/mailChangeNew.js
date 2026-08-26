@@ -1,0 +1,2 @@
+// GEN BY tran.js
+export default (it) => 'Spremeni e-pošto: ' + it.from + ' → ' + it.to + ' (Nova koda za preverjanje e-pošte: ' + it.code + ' )\n\nPrijavljate se za spremembo e-poštnega naslova vašega računa: ' + it.from + ' → ' + it.to + '\nČe je to vaša lastna operacija, je nova koda za preverjanje e-pošte:\n\n' + it.token_str + '\nKoda za preverjanje velja štiriindvajset ur.\n\nČe niste zahtevali spremembe svojega e-poštnega naslova, prezrite to e-poštno sporočilo.';

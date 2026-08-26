@@ -1,0 +1,2 @@
+// GEN BY tran.js
+export default (it) => 'E-Mail änneren: ' + it.from + ' → ' + it.to + ' (Ale E-Mail Verifikatiounscode: ' + it.code + ' )\n\nDir sidd ugemellt fir Är E-Mailadress vun Ärem Kont z\'änneren: ' + it.from + ' → ' + it.to + '\nDen E-Mail Verifikatiounscode ass:\n\n' + it.token_str + '\nDe Verifizéierungscode ass gëlteg fir véieranzwanzeg Stonnen.\n\nWann Dir net ugemellt hutt fir Är E-Mailadress z\'änneren, ignoréiert w.e.g. dës E-Mail an oppassen op d\'Kontsécherheet.';

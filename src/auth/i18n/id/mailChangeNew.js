@@ -1,0 +1,2 @@
+// GEN BY tran.js
+export default (it) => 'Ubah email: ' + it.from + ' → ' + it.to + ' (Kode verifikasi email baru: ' + it.code + ' )\n\nAnda mengajukan permohonan untuk mengubah alamat email akun Anda: ' + it.from + ' → ' + it.to + '\nJika ini adalah operasi Anda sendiri, kode verifikasi email yang baru adalah:\n\n' + it.token_str + '\nKode verifikasi berlaku selama dua puluh empat jam.\n\nJika Anda belum meminta untuk mengubah alamat email Anda, harap abaikan email ini.';

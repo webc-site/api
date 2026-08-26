@@ -1,0 +1,2 @@
+// GEN BY tran.js
+export default (it) => 'Muokkaa sähköpostiosoitetta: ' + it.from + ' → ' + it.to + ' (Vanha sähköpostin vahvistuskoodi: ' + it.code + ' )\n\nHaet tilisi sähköpostiosoitteen muuttamista: ' + it.from + ' → ' + it.to + '\nSähköpostin vahvistuskoodi on:\n\n' + it.token_str + '\nVahvistuskoodi on voimassa 24 tuntia.\n\nJos et ole hakenut sähköpostiosoitteesi muutosta, jätä tämä sähköposti huomioimatta ja kiinnitä huomiota tilin turvallisuuteen.';

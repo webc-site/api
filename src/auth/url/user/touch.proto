@@ -1,0 +1,11 @@
+syntax="proto3";
+
+package auth.user;
+
+message TouchReq {
+  uint64 uid=1;
+}
+
+message Touch {
+  bool exist=1;
+}

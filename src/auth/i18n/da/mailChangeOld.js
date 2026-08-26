@@ -1,0 +1,2 @@
+// GEN BY tran.js
+export default (it) => 'Rediger e-mail: ' + it.from + ' → ' + it.to + ' (gammel e-mailbekræftelseskode: ' + it.code + ' )\n\nDu ansøger om at ændre din kontos e-mailadresse: ' + it.from + ' → ' + it.to + '\nE-mailbekræftelseskoden er:\n\n' + it.token_str + '\nBekræftelseskoden er gyldig i 24 timer.\n\nHvis du ikke har ansøgt om at ændre din e-mailadresse, skal du ignorere denne e-mail og være opmærksom på kontosikkerheden.';

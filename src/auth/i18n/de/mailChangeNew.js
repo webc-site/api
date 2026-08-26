@@ -1,0 +1,2 @@
+// GEN BY tran.js
+export default (it) => 'E-Mail ändern: ' + it.from + ' → ' + it.to + ' (Neuer E-Mail-Bestätigungscode: ' + it.code + ' )\n\nSie beantragen die Änderung der E-Mail-Adresse Ihres Kontos: ' + it.from + ' → ' + it.to + '\nWenn es sich um Ihren eigenen Betrieb handelt, lautet der neue E-Mail-Bestätigungscode:\n\n' + it.token_str + '\nDer Bestätigungscode ist vierundzwanzig Stunden lang gültig.\n\nWenn Sie keine Änderung Ihrer E-Mail-Adresse beantragt haben, ignorieren Sie diese E-Mail bitte.';

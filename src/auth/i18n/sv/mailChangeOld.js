@@ -1,0 +1,2 @@
+// GEN BY tran.js
+export default (it) => 'Ändra e-post: ' + it.from + ' → ' + it.to + ' (Gammal e-postverifieringskod: ' + it.code + ' )\n\nDu ansöker om att ändra ditt kontos e-postadress: ' + it.from + ' → ' + it.to + '\nE-postverifieringskoden är:\n\n' + it.token_str + '\nVerifieringskoden är giltig i tjugofyra timmar.\n\nOm du inte har ansökt om att ändra din e-postadress, ignorera detta e-postmeddelande och var uppmärksam på kontosäkerheten.';

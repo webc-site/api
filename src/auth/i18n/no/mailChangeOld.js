@@ -1,0 +1,2 @@
+// GEN BY tran.js
+export default (it) => 'Endre e-post: ' + it.from + ' → ' + it.to + ' (gammel e-postbekreftelseskode: ' + it.code + ' )\n\nDu søker om å endre e-postadressen for kontoen din: ' + it.from + ' → ' + it.to + '\nE-postbekreftelseskoden er:\n\n' + it.token_str + '\nBekreftelseskoden er gyldig i tjuefire timer.\n\nHvis du ikke har søkt om å endre e-postadressen din, kan du ignorere denne e-posten og ta hensyn til kontosikkerheten.';

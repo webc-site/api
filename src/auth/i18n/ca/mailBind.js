@@ -1,0 +1,2 @@
+// GEN BY tran.js
+export default (it) => 'Correu electrònic vinculat: ' + it.to + ' (codi de verificació del correu electrònic: ' + it.code + ' )\n\nEsteu sol·licitant l\'enllaç del correu electrònic del compte:' + it.to + '\nEl codi de verificació del correu electrònic és:\n\n' + it.token_str + '\nEl codi de verificació és vàlid durant vint-i-quatre hores.\n\nSi no heu sol·licitat vincular la vostra adreça de correu electrònic, ignoreu aquest correu electrònic.';

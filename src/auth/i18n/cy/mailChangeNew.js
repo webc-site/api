@@ -1,0 +1,2 @@
+// GEN BY tran.js
+export default (it) => 'Addasu e-bost: ' + it.from + ' → ' + it.to + ' (Cod dilysu e-bost newydd: ' + it.code + ' )\n\nRydych yn gwneud cais i addasu cyfeiriad e-bost eich cyfrif: ' + it.from + ' → ' + it.to + '\nOs mai eich gweithrediad eich hun yw hwn, y cod dilysu e-bost newydd yw:\n\n' + it.token_str + '\nMae\'r cod dilysu yn ddilys am bedair awr ar hugain.\n\nOs nad ydych wedi gwneud cais i newid eich cyfeiriad e-bost, anwybyddwch yr e-bost hwn.';

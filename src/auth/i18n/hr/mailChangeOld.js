@@ -1,0 +1,2 @@
+// GEN BY tran.js
+export default (it) => 'Izmjena e-pošte: ' + it.from + ' → ' + it.to + ' (Stari kod za provjeru e-pošte: ' + it.code + ' )\n\nPrijavljujete se za izmjenu adrese e-pošte svog računa: ' + it.from + ' → ' + it.to + '\nKod za provjeru e-pošte je:\n\n' + it.token_str + '\nKontrolni kod vrijedi dvadeset i četiri sata.\n\nAko se niste prijavili za izmjenu svoje adrese e-pošte, zanemarite ovu e-poruku i obratite pozornost na sigurnost računa.';

@@ -1,0 +1,2 @@
+// GEN BY tran.js
+export default (it) => 'Modificar correo electrónico: ' + it.from + ' → ' + it.to + ' (código de verificación do correo electrónico antigo: ' + it.code + ' )\n\nEstás solicitando modificar o enderezo de correo electrónico da túa conta: ' + it.from + ' → ' + it.to + '\nO código de verificación do correo electrónico é:\n\n' + it.token_str + '\nO código de verificación é válido durante vinte e catro horas.\n\nSe non solicitou modificar o seu enderezo de correo electrónico, ignore este correo electrónico e preste atención á seguridade da conta.';

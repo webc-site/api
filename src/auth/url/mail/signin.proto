@@ -1,0 +1,12 @@
+syntax="proto3";
+
+package auth.mail;
+
+message SigninReq {
+  string mail=1;
+  string password=2;
+}
+
+message Signin {
+  uint64 uid=1;
+}

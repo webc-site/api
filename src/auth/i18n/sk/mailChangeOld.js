@@ -1,0 +1,2 @@
+// GEN BY tran.js
+export default (it) => 'Upraviť e-mail: ' + it.from + ' → ' + it.to + ' (Overovací kód starého e-mailu: ' + it.code + ' )\n\nŽiadate o úpravu e-mailovej adresy účtu: ' + it.from + ' → ' + it.to + '\nE-mailový overovací kód je:\n\n' + it.token_str + '\nOverovací kód je platný dvadsaťštyri hodín.\n\nAk ste nepožiadali o úpravu svojej e-mailovej adresy, ignorujte tento e-mail a venujte pozornosť zabezpečeniu účtu.';

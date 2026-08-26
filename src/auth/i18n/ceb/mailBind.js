@@ -1,0 +1,2 @@
+// GEN BY tran.js
+export default (it) => 'Ibugkos ang email: ' + it.to + ' (Email verification code: ' + it.code + ' )\n\nNag-aplay ka sa pagbugkos sa email sa account:' + it.to + '\nAng email verification code mao ang:\n\n' + it.token_str + '\nAng verification code balido sulod sa baynte kwatro ka oras.\n\nKung wala ka nag-aplay sa pagbugkos sa imong email address, palihug ibaliwala kini nga email.';

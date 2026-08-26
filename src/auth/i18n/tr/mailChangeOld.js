@@ -1,0 +1,2 @@
+// GEN BY tran.js
+export default (it) => 'E-postayı değiştirin: ' + it.from + ' → ' + it.to + ' (Eski e-posta doğrulama kodu: ' + it.code + ' )\n\nHesabınızın e-posta adresini değiştirmek için başvuruyorsunuz: ' + it.from + ' → ' + it.to + '\nE-posta doğrulama kodu:\n\n' + it.token_str + '\nDoğrulama kodu yirmi dört saat boyunca geçerlidir.\n\nE-posta adresinizi değiştirmek için başvuruda bulunmadıysanız lütfen bu e-postayı dikkate almayın ve hesap güvenliğine dikkat edin.';

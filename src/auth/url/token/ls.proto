@@ -1,0 +1,23 @@
+syntax="proto3";
+
+package auth.token;
+
+message LsReq {
+  uint64 uid=1;
+}
+
+message Info {
+  bytes token=1;
+  string name=2;
+  bool enable=3;
+  uint64 ts=4;
+}
+
+message Token {
+  uint64 id=1;
+  Info info=2;
+}
+
+message Ls {
+  repeated Token token_li=1;
+}

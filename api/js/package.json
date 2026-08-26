@@ -1,0 +1,8 @@
+{
+  "name": "@webc.site/api",
+  "type": "module",
+  "dependencies": {
+    "@1-/proto": "^0.1.1",
+    "@1-/protoapi": "^0.1.7"
+  }
+}

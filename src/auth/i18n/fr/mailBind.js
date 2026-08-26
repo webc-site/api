@@ -1,0 +1,2 @@
+// GEN BY tran.js
+export default (it) => 'Lier l\'e-mail : ' + it.to + ' (Code de vérification de l\'e-mail : ' + it.code + ' )\n\nVous postulez pour lier l\'adresse e-mail du compte :' + it.to + '\nLe code de vérification de l\'e-mail est :\n\n' + it.token_str + '\nLe code de vérification est valable vingt-quatre heures.\n\nSi vous n\'avez pas demandé à lier votre adresse e-mail, veuillez ignorer cet e-mail.';

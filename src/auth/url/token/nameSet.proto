@@ -1,0 +1,11 @@
+syntax="proto3";
+
+package auth.token;
+
+message NameSetReq {
+  uint64 uid=1;
+  uint64 id=2;
+  string name=3;
+}
+
+message NameSet {}

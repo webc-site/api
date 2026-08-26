@@ -1,0 +1,2 @@
+// GEN BY tran.js
+export default (it) => 'Modify email: ' + it.from + ' → ' + it.to + ' (New email verification code: ' + it.code + ' )\n\nYou are applying to modify your account email address: ' + it.from + ' → ' + it.to + '\nIf this is your own operation, the new email verification code is:\n\n' + it.token_str + '\nThe verification code is valid for twenty-four hours.\n\nIf you have not requested to modify your email address, please ignore this email.';

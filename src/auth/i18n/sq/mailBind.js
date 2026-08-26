@@ -1,0 +1,2 @@
+// GEN BY tran.js
+export default (it) => 'Lidhni email-in: ' + it.to + ' (Kodi i verifikimit të emailit: ' + it.code + ' )\n\nPo aplikoni për të lidhur emailin e llogarisë:' + it.to + '\nKodi i verifikimit të emailit është:\n\n' + it.token_str + '\nKodi i verifikimit është i vlefshëm për njëzet e katër orë.\n\nNëse nuk keni aplikuar për të lidhur adresën tuaj të emailit, ju lutemi injoroni këtë email.';

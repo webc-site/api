@@ -1,0 +1,30 @@
+syntax="proto3";
+
+package auth;
+
+enum AuthType {
+  MAIL=1;
+  PHONE=2;
+  GOOGLE=3;
+  APPLE=4;
+  MICROSOFT=5;
+  WECHAT=6;
+  GITHUB=7;
+}
+
+message Account {
+  AuthType auth_type=1;
+  string account=2;
+}
+
+message GetUser {
+  uint64 id=1;
+  string name=2;
+  bool is_login=3;
+  Account account=4;
+}
+
+message Get {
+  repeated AuthType auth_type_li=1;
+  repeated GetUser user_li=2;
+}

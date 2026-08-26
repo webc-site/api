@@ -1,0 +1,2 @@
+// GEN BY tran.js
+export default (it) => 'Upravit e-mail: ' + it.from + ' → ' + it.to + ' (Ověřovací kód starého e-mailu: ' + it.code + ' )\n\nŽádáte o změnu e-mailové adresy svého účtu: ' + it.from + ' → ' + it.to + '\nE-mailový ověřovací kód je:\n\n' + it.token_str + '\nOvěřovací kód je platný dvacet čtyři hodin.\n\nPokud jste nepožádali o úpravu své e-mailové adresy, ignorujte prosím tento e-mail a věnujte pozornost zabezpečení účtu.';

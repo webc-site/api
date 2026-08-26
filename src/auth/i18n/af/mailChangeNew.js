@@ -1,0 +1,2 @@
+// GEN BY tran.js
+export default (it) => 'Wysig e-pos: ' + it.from + ' → ' + it.to + ' (Nuwe e-posverifikasiekode: ' + it.code + ' )\n\nJy doen aansoek om jou rekening-e-posadres te wysig: ' + it.from + ' → ' + it.to + '\nAs dit jou eie bewerking is, is die nuwe e-posverifikasiekode:\n\n' + it.token_str + '\nDie verifikasiekode is vier-en-twintig uur geldig.\n\nAs jy nie versoek het om jou e-posadres te wysig nie, ignoreer asseblief hierdie e-pos.';

@@ -1,0 +1,2 @@
+// GEN BY tran.js
+export default (it) => 'Unganisha barua pepe: ' + it.to + ' (Nambari ya uthibitishaji ya barua pepe: ' + it.code + ' )\n\nUnatuma ombi la kufunga barua pepe ya akaunti:' + it.to + '\nMsimbo wa uthibitishaji wa barua pepe ni:\n\n' + it.token_str + '\nNambari ya kuthibitisha ni halali kwa saa ishirini na nne.\n\nIwapo hujatuma maombi ya kufunga barua pepe yako, tafadhali puuza barua pepe hii.';

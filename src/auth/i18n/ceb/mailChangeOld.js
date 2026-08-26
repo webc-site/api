@@ -1,0 +1,2 @@
+// GEN BY tran.js
+export default (it) => 'Usba ang email: ' + it.from + ' → ' + it.to + ' (Karaan nga email verification code: ' + it.code + ' )\n\nNag-aplay ka aron usbon ang email address sa imong account: ' + it.from + ' → ' + it.to + '\nAng email verification code mao ang:\n\n' + it.token_str + '\nAng verification code balido sulod sa baynte kwatro ka oras.\n\nKung wala ka mag-aplay aron usbon ang imong email address, palihug ibaliwala kini nga email ug hatagan pagtagad ang seguridad sa account.';

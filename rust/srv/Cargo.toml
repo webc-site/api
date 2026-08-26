@@ -1,0 +1,24 @@
+[package]
+name = "webc_srv"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+description = "WebC site server"
+
+[dependencies]
+axum = "0.8"
+log = "0.4.34"
+log_init = "0.1.39"
+mimalloc = "0.1"
+thiserror = "2.0.20"
+tokio = { version = "1.53.1", features = ["fs", "io-util", "macros", "net", "rt-multi-thread"] }
+wasmtime = { version = "48", features = [
+  "async",
+  "component-model",
+  "cranelift",
+  "pooling-allocator"
+] }
+wasmtime-wasi = "48"
+wasmtime-wasi-http = "48"

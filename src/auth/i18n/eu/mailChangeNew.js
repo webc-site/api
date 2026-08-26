@@ -1,0 +1,2 @@
+// GEN BY tran.js
+export default (it) => 'Aldatu helbide elektronikoa: ' + it.from + ' → ' + it.to + ' (E-posta egiaztatzeko kode berria: ' + it.code + ' )\n\nZure kontuaren helbide elektronikoa aldatzeko eskaera egiten ari zara: ' + it.from + ' → ' + it.to + '\nHau zure eragiketa bada, posta elektronikoa egiaztatzeko kode berria hau da:\n\n' + it.token_str + '\nEgiaztapen-kodeak hogeita lau ordurako balio du.\n\nEz baduzu zure helbide elektronikoa aldatzeko eskatu, mesedez ez ikusi mezu honi.';

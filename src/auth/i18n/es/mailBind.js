@@ -1,0 +1,2 @@
+// GEN BY tran.js
+export default (it) => 'Vincular correo electrónico: ' + it.to + ' (Código de verificación de correo electrónico: ' + it.code + ')\n\nEstás solicitando vincular el correo electrónico de tu cuenta:' + it.to + '\nEl código de verificación del correo electrónico es:\n\n' + it.token_str + '\nEl código de verificación es válido durante veinticuatro horas.\n\nSi no ha solicitado vincular su dirección de correo electrónico, ignore este correo electrónico.';

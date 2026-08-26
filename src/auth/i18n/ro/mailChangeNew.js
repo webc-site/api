@@ -1,0 +1,2 @@
+// GEN BY tran.js
+export default (it) => 'Modificați adresa de e-mail: ' + it.from + ' → ' + it.to + ' (Noul cod de verificare a e-mailului: ' + it.code + ' )\n\nAplicați pentru modificarea adresei de e-mail a contului: ' + it.from + ' → ' + it.to + '\nDacă aceasta este operațiunea dvs., noul cod de verificare a e-mailului este:\n\n' + it.token_str + '\nCodul de verificare este valabil douăzeci și patru de ore.\n\nDacă nu ați solicitat să vă modificați adresa de e-mail, vă rugăm să ignorați acest e-mail.';

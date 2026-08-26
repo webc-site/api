@@ -1,0 +1,2 @@
+// GEN BY tran.js
+export default (it) => 'E-poçtu birləşdirin: ' + it.to + ' (E-poçt doğrulama kodu: ' + it.code + ' )\n\nSiz hesab e-poçtunu bağlamaq üçün müraciət edirsiniz:' + it.to + '\nE-poçt doğrulama kodu belədir:\n\n' + it.token_str + '\nDoğrulama kodu iyirmi dörd saat ərzində etibarlıdır.\n\nƏgər siz e-poçt ünvanınızı bağlamaq üçün müraciət etməmisinizsə, lütfən, bu e-poçta məhəl qoymayın.';

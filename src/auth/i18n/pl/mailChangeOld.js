@@ -1,0 +1,2 @@
+// GEN BY tran.js
+export default (it) => 'Zmień adres e-mail: ' + it.from + ' → ' + it.to + ' (Stary kod weryfikacyjny adresu e-mail: ' + it.code + ' )\n\nUbiegasz się o modyfikację adresu e-mail swojego konta: ' + it.from + ' → ' + it.to + '\nKod weryfikacyjny e-mail to:\n\n' + it.token_str + '\nKod weryfikacyjny jest ważny przez dwadzieścia cztery godziny.\n\nJeśli nie złożyłeś wniosku o zmianę adresu e-mail, zignoruj ​​tę wiadomość i zwróć uwagę na bezpieczeństwo konta.';

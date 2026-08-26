@@ -1,0 +1,2 @@
+// GEN BY tran.js
+export default (it) => 'Elektron pochtani bog‘lash: ' + it.to + ' (E-pochtani tasdiqlash kodi: ' + it.code + ' )\n\nSiz hisob e-pochta manzilini bog‘lash uchun ariza topshiryapsiz:' + it.to + '\nElektron pochtani tasdiqlash kodi:\n\n' + it.token_str + '\nTasdiqlash kodi yigirma to\'rt soat davomida amal qiladi.\n\nAgar siz elektron pochta manzilingizni bog\'lash uchun ariza bermagan bo\'lsangiz, ushbu xatga e\'tibor bermang.';

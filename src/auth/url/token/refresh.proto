@@ -1,0 +1,13 @@
+syntax="proto3";
+
+package auth.token;
+
+message RefreshReq {
+  uint64 uid=1;
+  uint64 id=2;
+}
+
+message Refresh {
+  bytes token=1;
+  uint64 ts=2;
+}

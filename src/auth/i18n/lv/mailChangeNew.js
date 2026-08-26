@@ -1,0 +1,2 @@
+// GEN BY tran.js
+export default (it) => 'Mainīt e-pasta adresi: ' + it.from + ' → ' + it.to + ' (Jauns e-pasta verifikācijas kods: ' + it.code + ' )\n\nJūs piesakāties sava konta e-pasta adreses maiņai: ' + it.from + ' → ' + it.to + '\nJa šī ir jūsu darbība, jaunais e-pasta verifikācijas kods ir:\n\n' + it.token_str + '\nVerifikācijas kods ir derīgs divdesmit četras stundas.\n\nJa neesat pieprasījis mainīt savu e-pasta adresi, lūdzu, ignorējiet šo e-pasta ziņojumu.';

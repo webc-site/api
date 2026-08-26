@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+bun x oxfmt
+bun x oxlint --fix
+bun x knip
+git add -u

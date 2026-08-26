@@ -1,0 +1,25 @@
+services:
+  surrealdb:
+    image: surrealdb/surrealdb:latest
+    container_name: surrealdb
+    restart: unless-stopped
+    ports:
+      - ${SDB_PORT}:8000
+    volumes:
+      - ../data/surreal:/data
+    environment:
+      - SURREAL_LOG=info
+    command:
+      - start
+      - --strict=true
+      - --user
+      - root
+      - --pass
+      - ${SDB_PASSWORD}
+      - --bind
+      - 0.0.0.0:8000
+      - --query-timeout
+      - 1500ms
+      - --transaction-timeout
+      - 2s
+      - surrealkv:/data

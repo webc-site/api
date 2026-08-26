@@ -1,0 +1,2 @@
+// GEN BY tran.js
+export default (it) => 'Sửa đổi email: ' + it.from + ' → ' + it.to + ' (Mã xác minh email mới: ' + it.code + ' )\n\nBạn đang đăng ký sửa đổi địa chỉ email tài khoản của mình: ' + it.from + ' → ' + it.to + '\nNếu đây là hoạt động của riêng bạn, mã xác minh email mới là:\n\n' + it.token_str + '\nMã xác minh có hiệu lực trong 24 giờ.\n\nNếu bạn chưa yêu cầu sửa đổi địa chỉ email của mình, vui lòng bỏ qua email này.';

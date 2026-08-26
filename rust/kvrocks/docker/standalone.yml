@@ -1,0 +1,7 @@
+services:
+  kvrocks-standalone:
+    image: apache/kvrocks:latest
+    container_name: kvrocks-standalone
+    ports:
+      - "6665:6666"
+    restart: unless-stopped

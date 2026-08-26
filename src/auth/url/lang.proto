@@ -1,0 +1,8 @@
+syntax="proto3";
+
+package auth;
+
+// -1 表示没设置
+message Lang {
+  optional sint32 lang=1;
+}

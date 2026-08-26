@@ -1,0 +1,4 @@
+include:
+  - ./standalone.yml
+  - ./sentinel.yml
+  - ./cluster.yml

@@ -1,0 +1,2 @@
+// GEN BY tran.js
+export default (it) => 'Ngowahi email: ' + it.from + ' → ' + it.to + ' (Kode verifikasi email anyar: ' + it.code + ' )\n\nSampeyan nglamar kanggo ngowahi alamat email akun: ' + it.from + ' → ' + it.to + '\nYen iki operasi sampeyan dhewe, kode verifikasi email anyar yaiku:\n\n' + it.token_str + '\nKode verifikasi valid kanggo patlikur jam.\n\nYen sampeyan durung njaluk ngowahi alamat email sampeyan, aja lali email iki.';

@@ -1,0 +1,16 @@
+{
+  "lockfileVersion": 2,
+  "configVersion": 1,
+  "workspaces": {
+    "": {
+      "dependencies": {
+        "@3-/cargo_upgrade": "^0.1.4",
+      },
+    },
+  },
+  "packages": {
+    "@3-/cargo_upgrade": ["@3-/cargo_upgrade@0.1.4", "", { "dependencies": { "@iarna/toml": "^2.2.5" }, "bin": { "cargo_upgrade": "bin.js" } }, "sha512-jE05gskFE0aq8JbhOvq8YD+j86jjsIMPv5Rnh5ntZNWfveM5n5UEwSkJdAHjqN1LUjPmoFIjjbYm418rjz2Rvw=="],
+
+    "@iarna/toml": ["@iarna/toml@2.2.5", "", {}, "sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg=="],
+  }
+}
