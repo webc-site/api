@@ -16,11 +16,6 @@ async fn root() -> &'static str {
     "webc-api"
 }
 
-#[unsafe(no_mangle)]
-pub extern "C" fn api_version() -> i32 {
-    1
-}
-
 #[cfg(target_arch = "wasm32")]
 #[wasm_bindgen]
 pub async fn handle(uri: String) -> core::result::Result<String, JsValue> {

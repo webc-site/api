@@ -53,29 +53,9 @@ async fn handle_request(State(wasm): State<Arc<WasmEngine>>, uri: Uri) -> impl I
         .instantiate_async(&mut store, &wasm.module)
         .await
     {
-        Ok(instance) => {
+        Ok(_instance) => {
             log::debug!("Instantiated WASM instance for request: {}", uri);
-            let version = instance
-                .get_typed_func::<(), i32>(&mut store, "api_version")
-                .ok();
-
-            if let Some(version_func) = version {
-                match version_func.call_async(&mut store, ()).await {
-                    Ok(v) => (
-                        StatusCode::OK,
-                        format!("WASM API (version: {v}) handled: {uri}"),
-                    ),
-                    Err(e) => {
-                        error!("WASM call error: {e}");
-                        (
-                            StatusCode::INTERNAL_SERVER_ERROR,
-                            format!("WASM call error: {e}"),
-                        )
-                    }
-                }
-            } else {
-                (StatusCode::OK, format!("Handled by WASM: {uri}"))
-            }
+            (StatusCode::OK, format!("Handled by WASM: {uri}"))
         }
         Err(e) => {
             error!("WASM instantiation error: {e}");
