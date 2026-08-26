@@ -9,6 +9,7 @@ description = "WebC site server"
 
 [dependencies]
 axum = "0.8"
+genv = "0.1.18"
 log = "0.4.34"
 log_init = "0.1.39"
 mimalloc = "0.1"

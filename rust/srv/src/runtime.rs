@@ -60,7 +60,7 @@ impl WasmEngine {
         add_to_linker_async(&mut linker, |s: &mut ServerCtx| &mut s.wasi)?;
         linker.define_unknown_imports_as_traps(&module)?;
 
-        let semaphore = Arc::new(tokio::sync::Semaphore::new(total_instances as usize));
+        let semaphore = Arc::new(Semaphore::new(total_instances as usize));
 
         Ok(Arc::new(Self {
             engine,
