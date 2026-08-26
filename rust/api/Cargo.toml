@@ -22,7 +22,7 @@ wasm-bindgen.workspace = true
 webc_lib = { path = "../lib", version = "0.1.0" }
 
 [target.'cfg(target_arch = "wasm32")'.dependencies]
-http = "1.2"
+http = "1.5"
 http-body-util = "0.1"
 tower-service = "0.3"
 wasm-bindgen-futures = "0.4"
